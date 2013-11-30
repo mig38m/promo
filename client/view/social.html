@@ -1,0 +1,16 @@
+<template name="social">
+	
+
+<div id="social" class="well">
+	<h1 class="heading uppercase">Мы ВКонтакте</h1>
+	<!-- VK Widget -->
+	<div id="vk_groups">
+		{{#each users}}<a href="//vk.com/{{screen_name}}" title="{{first_name}} {{last_name}}" target="_blank"><img src="{{photo_100}}" alt="{{first_name}} {{last_name}}" /></a>{{/each}}
+		<div class="subscribe">
+			<a href="//vk.com/club57779695">подпишись</a>
+		</div>
+	</div>
+</div>
+
+	
+</template>

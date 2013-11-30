@@ -1,0 +1,27 @@
+<template name="header">
+    <div class="container">
+      <div class="row-fluid row-fluid-1">
+        <span class="span4">
+			<a href="http://mariels.ru/">
+          <img src="/images/logo.png" class="pull-center image">
+	  		</a>
+        </span>
+        <span class="span8">
+          <ul id="main-menu">
+			  <li><a href="http://mariels.ru/member/sign_in.php?aff_id=1">Вход</a></li>
+			  {{#if contestInProgress}}
+			  <li><a href="#members">Участницы</a></li>
+			  <li><a href="#ratings">Рейтинги</a></li>
+			  <li><a href="#social">Мы ВКонтакте</a></li>
+			  <li><a href="#terms">Условия</a></li>
+			  <li><a href="http://mariels.ru/about_us.php?aff_id=1">О нас</a></li>
+			  {{else}}
+			  <li><a href="http://mariels.ru/about_us.php?aff_id=1">О сайте</a></li>
+			  <li><a href="http://mariels.ru/member/new_members_list.php?aff_id=1">Участники</a></li>
+			  <li><a href="http://mariels.ru/member/latest_photo.php?aff_id=1">Фото</a></li>
+			  {{/if}}
+		  </ul>
+        </span>
+      </div>
+    </div>
+</template>

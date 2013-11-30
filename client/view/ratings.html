@@ -1,0 +1,18 @@
+<template name="ratings">
+	
+<div id="ratings" class="well">
+  <h1 class="heading uppercase">Рейтинги</h1>
+  <div class="chart">
+	  {{#each_with_index members}}
+	  <div class="rating num{{index}}">
+	  	<img src="{{data.thumb}}" class="avatar"/>
+	  </div>
+	  {{/each_with_index}}
+  </div>
+  <div class="pull-center pull-center-1">
+	  <div id="votes"><span class="value">{{votes}}</span><span class="plus-one">+1</span></div>
+	  <p><strong>голосов</strong></p>
+  </div>
+</div>
+
+</template>

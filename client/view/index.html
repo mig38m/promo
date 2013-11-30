@@ -1,0 +1,52 @@
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="Конкурс Мисс Осень 2013 при поддержке крупнейшего сайта знакомств Марий Эл MARIELS.RU – самые красивые девушки Марий Эл соревнуются за звание Мисс Осень 2013 по версии MARIELS" />
+	<meta name="image" content="/images/logo.png" />
+	<meta name="vk:app_id" content="2955171" />
+	<link rel="shortcut icon" href="http://mariels.ru/favicon.png" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/promo-1.css" media="screen" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="stylesheets/flipclock.css">
+    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+	<script type="text/javascript" src="js/flipclock/libs/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/flipclock/flipclock.min.js"></script>	
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?101"></script>
+    <title>Мисс Осень 2013</title>
+  </head>
+  
+  <body>
+	  <div class="page-header-bg"></div>
+	  {{>header}}
+	  <div class="container-fluid">
+		  <div class="container">
+		  <!-- HEADER -->
+          <div class="page-header">
+            <h1 class="header-gradient">Мисс Осень 2013</h1>
+          </div>
+		  {{>page}}
+		 </div>
+	 </div> 
+	 <noscript><p><img src="http://piwik.mariels.ru/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+  </body>
+  
+  <template name="page">
+	  {{#if contestInProgress}}
+		{{>countdown}}
+	  	{{>members}}
+		{{>social}}
+	  	{{>ratings}}
+		{{>footer}}
+	{{else}}
+		{{>winner}}
+		{{>social}}
+		{{>footer}}
+	{{/if}}
+  </template>

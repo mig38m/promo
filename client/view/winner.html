@@ -1,0 +1,27 @@
+<template name="winner">
+
+<div id="winner" >
+	<div class="row-fluid">
+		<span class="member span6">
+			<span class="info-cont">
+				<span class="shadow"></span>
+				<a href="{{winner.url}}" class="account">
+					<img src="{{winner.thumb}}" width="" height="" class="avatar"/>
+					<span>{{winner.name}}</span>
+				</a>
+			</span>
+			<img src="{{winner.photo}}" class="image" />
+		</span>
+		<span class="span6">
+			<div class="well">
+				<h1 class="heading uppercase">Поздравляем!</h1>
+	            <p>Мисс Осень 2013 <a style="text-transform: uppercase;" href="{{winner.url}}">{{winner.name}}</a>! Поздравляем очаровательную {{winner.title}} с победой в нашем конкрусе! Мы дарим ей фотосессию у профессионального фотографа <a href="http://vk.com/k_foto" target="_blank">Константина Баранова</a>. Лучшие фото вы увидите на сайте <a href="http://mariels.ru/?aff_id=1">MARIELS.RU</a></p>
+				<p>Вице-мисс Осень 2013 стала <a style="text-transform: uppercase;" href="{{second.url}}">{{second.name}}</a>. Наш партнер, танцевальная студия "<a href="https://vk.com/crazypole" target="_blank">CrazyPole</a>" приглашает {{second.title}} на 4 бесплатных занятия!</p>
+				<p>Все очаровательные участницы конкурса получат поощрительные призы от <a href="http://mariels.ru/?aff_id=1">MARIELS.</a> Мы искренне благодарим всех, кто голосовал за девушек. Спасибо!</p>
+				<center><a href="http://mariels.ru/?aff_id=1" id="ref-btn">Регистрируйся <span class="mariels">сейчас</span>!</a></center>
+			</div>
+		</span>
+	</div>
+</div>
+
+</template>

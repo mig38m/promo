@@ -1,0 +1,28 @@
+<template name="members">
+
+<div id="members">
+{{#render_members members}}
+<span class="member span6">
+	<span class="info-cont">
+		<span class="shadow"></span>
+		<a href="{{member.url}}" class="account">
+			<img src="{{member.thumb}}" width="" height="" class="avatar"/>
+			<span>{{member.name}}</span>
+		</a>
+	</span>
+	<img src="{{member.photo}}" class="image" />
+	<span class="rate-cont">
+		<span class="shadow"></span>
+		<button class="btn {{#if voted}}btn-info{{else}}btn-warning{{/if}} pull-center btn-large" data-id="{{member._id}}" {{#if voted}}disabled{{/if}}>
+		{{#if voted}}
+			Проголосуйте снова завтра
+		{{else}}
+			Голосовать за <span>{{member.title}}</span>
+		{{/if}}
+		</button>
+	</span>
+</span>
+{{/render_members}}
+</div>
+
+</template>
